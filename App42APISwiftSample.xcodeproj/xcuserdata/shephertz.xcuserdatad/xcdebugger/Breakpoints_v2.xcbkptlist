@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "App42APISwiftSample/Tests/UserServiceAPI.swift"
+            timestampString = "442156692.170881"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
+            landmarkName = "createUser()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "App42APISwiftSample.UserServiceAPI.(createUser (App42APISwiftSample.UserServiceAPI) -&gt; () -&gt; ()).(closure #1)"
+                  moduleName = "App42APISwiftSample"
+                  urlString = "file:///Users/shephertz/Desktop/App42GitHubRepo/App42SwiftSample/App42APISwiftSample/Tests/UserServiceAPI.swift"
+                  timestampString = "442152077.080829"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "30">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "reabstraction thunk helper from @callee_owned (@unowned Swift.Bool, @owned Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;, @owned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.App42Exception&gt;) -&gt; (@unowned ()) to @callee_unowned @objc_block (@unowned ObjectiveC.ObjCBool, @unowned Swift.ImplicitlyUnwrappedOptional&lt;Swift.AnyObject&gt;, @unowned Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.App42Exception&gt;) -&gt; (@unowned ())"
+                  moduleName = "App42APISwiftSample"
+                  urlString = "file:///Users/shephertz/Desktop/App42GitHubRepo/App42SwiftSample/App42APISwiftSample/Tests/UserServiceAPI.swift"
+                  timestampString = "442152077.081299"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "166"
+                  endingLineNumber = "166"
+                  offsetFromSymbolStart = "11">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
