@@ -245,7 +245,6 @@ class BuddyServiceAPI: UITableViewController {
     func getAllFriends()
     {
         let userName = "Bhavika"
-        let buddyName = "Rajeev"
         buddyService?.getAllFriends(userName, completionBlock:{ (success, response, exception) -> Void in
             if (success)
             {

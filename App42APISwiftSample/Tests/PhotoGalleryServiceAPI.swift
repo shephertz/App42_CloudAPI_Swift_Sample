@@ -284,7 +284,7 @@ class PhotoGalleryServiceAPI: UITableViewController {
     taglistArray.addObject("Bhavs")
   //  App42API.initializeWithAPIKey("APP_KEY", andSecretKey:"SECRET_KEY")
    // let photoService = App42API.buildPhotoService() as? PhotoService
-    photoService?.addTagToPhoto(userName, albumName:albumName, photoName:"MyPhoto",tagList: taglistArray as [AnyObject], completionBlock: { (success, response, exception) -> Void in
+    photoService?.addTagToPhoto(userName, albumName:albumName, photoName:photoName, tagList: taglistArray as [AnyObject], completionBlock: { (success, response, exception) -> Void in
     if (success)
     {
         let album = response as! Album

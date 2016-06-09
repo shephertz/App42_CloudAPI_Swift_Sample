@@ -309,7 +309,7 @@ class RewardServiceAPI: UITableViewController {
                 let list = response as! NSArray
                 for reward in list {
                     NSLog("%@", reward.name)
-                    NSLog("%f", reward.points)
+                    //NSLog("%f", reward.points)
                     NSLog("%@", reward.userName)
                 }
             }
@@ -333,7 +333,7 @@ class RewardServiceAPI: UITableViewController {
                 let list = response as! NSArray
                 for reward in list {
                     NSLog("%@", reward.name)
-                    NSLog("%f", reward.points)
+                    //NSLog("%f", reward.points)
                     NSLog("%@", reward.userName)
                 }
             }
@@ -358,7 +358,7 @@ class RewardServiceAPI: UITableViewController {
                 let list = response as! NSArray
                 for reward in list {
                     NSLog("%@", reward.name)
-                    NSLog("%f", reward.points)
+                    //NSLog("%f", reward.points)
                     NSLog("%@", reward.userName)
                 }
             }

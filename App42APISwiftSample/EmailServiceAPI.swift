@@ -216,12 +216,12 @@ class EmailServiceAPI: UITableViewController {
         emailService?.removeEmailConfiguration(emailId, completionBlock: { (success, response, exception) ->Void in
         if (success)
         {
-         let email = response as! Email
+         //let email = response as! Email
         }
         else
         {
             let appErrorCode = exception.appErrorCode
-            let httpErrorCode = exception.httpErrorCode
+            //let httpErrorCode = exception.httpErrorCode
             if(appErrorCode == 2303)
             {
              // Handle here for Not Found (Email with the id 'nick@shephertz.co.in' does not exist.)
@@ -235,7 +235,7 @@ class EmailServiceAPI: UITableViewController {
             {
             // handle here for Internal Server Error
             }
-            var jsonText = exception.reason!
+            //var jsonText = exception.reason!
         }
      })
     }

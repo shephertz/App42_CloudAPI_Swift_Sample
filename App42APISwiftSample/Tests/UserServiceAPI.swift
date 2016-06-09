@@ -183,12 +183,12 @@ class UserServiceAPI: UITableViewController {
     func createUser()
     {
         NSLog("Create User")
-        let userName = "NickAtShephertz"
+        let userName = "NickAtShephertz22232323"
         let password = "123456"
-        let emailAddress = "NickAtShephertz@shephertz.com"
+        let emailAddress = "NickAtShephertz2323232323@shephertz.com"
         let userInfo = NSDictionary(object:"John",forKey:"name")
-        let dbName = ""
-        let collectionName = ""
+        let dbName = "TEST"
+        let collectionName = "IoT"
         App42API.setDbName(dbName);
         userService?.addUserInfo(userInfo as [NSObject : AnyObject],collectionName:collectionName,  completionBlock: { (success, response, exception) -> Void in
             NSLog("Add json object User")

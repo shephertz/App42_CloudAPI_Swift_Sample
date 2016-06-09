@@ -13,7 +13,10 @@ class StorageServiceAPI: UITableViewController {
     var apiList:NSArray? = nil
     var storageService:StorageService? = nil
     var objectId:NSString = ""
-    var dbName = "jsonDocument2"
+    var dbName = "TEST"
+    var wishList = App42API.buildStorageService() as? StorageService
+    var json: [String: AnyObject]!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,7 +63,8 @@ class StorageServiceAPI: UITableViewController {
         let cellText = cell?.textLabel!.text
         if cellText == "InsertDocFromJsonString"
         {
-            InsertDocFromJsonString()
+            //InsertDocFromJsonString()
+            FindDocCode()
         }
         else if cellText == "InsertDocFromDictionary"
         {
@@ -221,7 +225,8 @@ class StorageServiceAPI: UITableViewController {
     
     func FindAllDocs()
     {
-         
+        // print(self.json)
+       // return;
         let collectionName = "Demo"
         storageService?.findAllDocuments(dbName, collectionName: collectionName, completionBlock: { (success, response, exception) -> Void in
             if(success)
@@ -333,13 +338,80 @@ class StorageServiceAPI: UITableViewController {
         })
     }
     
+    func FindDocCode()
+    {
+       let collectionName = "Demo"
+        storageService?.findAllDocuments(dbName, collectionName: collectionName, completionBlock: {(success, response, exception) -> Void in
+            
+            if(success){
+                
+                let storage = response as! Storage
+                
+                let jsonDocList = storage.jsonDocArray
+                
+                var jsonString: String {
+                    
+                    var someString: String = ""
+                    
+                    for jsonDoc in jsonDocList{
+                        
+                        someString = jsonDoc.jsonDoc
+                        
+                    }
+                    
+                    return someString
+                }
+                
+                let data = jsonString.dataUsingEncoding(NSUTF8StringEncoding, allowLossyConversion: false)!
+                
+                do {
+                    
+                    self.json = try NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions()) as! [String: AnyObject]
+                    
+                }catch{
+                    
+                    print(error)
+                    
+                }
+                
+                print(self.json)
+                
+            }
+            else
+            {
+                
+                NSLog("%@", exception.reason!)
+            }
+        })
+    }
+
+func printJSON(){
+    
+    if json != nil{
+        
+        print(json)
+        
+    }else{
+        
+        print("error") //Always return nil: error
+        
+    }
+}
+    
     func FindDocumentByQuery()
     {
-        let collectionName = "Demo"
-        let key = "name"
-        let value = "Nick"
-        let query = QueryBuilder.buildQueryWithKey(key, value: value, andOperator:APP42_OP_EQUALS)
-        storageService?.findDocumentsByQuery(query,dbName:dbName, collectionName: collectionName, completionBlock: { (success, response, exception) -> Void in
+        let collectionName = "IoT"
+        let key1 = "name"
+        let value1 = "Nick"
+        
+        let key2 = "age"
+        let value2 = 30
+        
+        let query1 = QueryBuilder.buildQueryWithKey(key1, value: value1, andOperator:APP42_OP_EQUALS)
+        let query2 = QueryBuilder.buildQueryWithKey(key2, value: value2, andOperator:APP42_OP_EQUALS)
+        let query3 = QueryBuilder.combineQuery(query1, withQuery: query2, usingOperator: APP42_OP_AND)
+        
+        storageService?.findDocumentsByQuery(query3,dbName:dbName, collectionName: collectionName, completionBlock: { (success, response, exception) -> Void in
             if(success)
             {
                 let storage = response as! Storage

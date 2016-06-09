@@ -268,7 +268,6 @@ class LoggingServiceAPI: UITableViewController {
         
         func fetchLogsByModule()
         {
-            let message = "Hello"
             let moduleName = "test"
             //App42API.initializeWithAPIKey("API_KEY" andSecretKey:"SECRET_KEY")
             //let logService = App42API.buildLogService() as? LogService

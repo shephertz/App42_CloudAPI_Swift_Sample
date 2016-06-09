@@ -345,7 +345,7 @@ class CartServiceAPI: UITableViewController {
             for cart in cartList
             {
                 NSLog("CartId is : %@",cart.cartId)
-                let payment = cart.paymentObj as! Payment
+                let payment = cart.paymentObj as Payment
                 NSLog("Transaction Id : %@",payment.transactionId)
                 NSLog("Total Amount from payment node : %lf",payment.totalAmount)
                 NSLog("Status : %@",payment.status)
@@ -372,7 +372,7 @@ class CartServiceAPI: UITableViewController {
         {
             let cart = response as! Cart
             NSLog("CartId is : %@",cart.cartId)
-            let payment = cart.paymentObj as! Payment
+            let payment = cart.paymentObj as Payment
             NSLog("Transaction Id : %@",payment.transactionId)
             NSLog("Total Amount from payment node : %lf",payment.totalAmount)
             NSLog("Status : %@",payment.status)
@@ -400,7 +400,7 @@ class CartServiceAPI: UITableViewController {
         for cart in cartList
         {
             NSLog("CartId is : %@",cart.cartId)
-            let payment = cart.paymentObj as! Payment
+            let payment = cart.paymentObj as Payment
             NSLog("Transaction Id : %@",payment.transactionId)
             NSLog("Total Amount from payment node : %d",payment.totalAmount)
             NSLog("Status : %@",payment.status)

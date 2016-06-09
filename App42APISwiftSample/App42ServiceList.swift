@@ -40,7 +40,7 @@ class App42ServiceList: UITableViewController {
         servicesCount = (serviceList?.count)!
         let allKeys:NSMutableArray = NSMutableArray(array: (serviceList?.allKeys)!)
         
-        sortedKeys = allKeys.sortedArrayUsingSelector(Selector("caseInsensitiveCompare:"))
+        sortedKeys = allKeys.sortedArrayUsingSelector(#selector(NSString.caseInsensitiveCompare(_:)))
     }
 
     override func didReceiveMemoryWarning() {

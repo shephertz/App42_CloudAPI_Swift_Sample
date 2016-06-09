@@ -33,4 +33,14 @@
 
 -(void)isAvailable:(NSArray*)campaigns completionBlock:(App42ResponseBlock)completionBlock;
 
+
+-(void)getViralityConfig:(App42ResponseBlock)completionBlock;
+
+-(void)getMyReferral:(App42ResponseBlock)completionBlock;
+
+-(void)earnRewardForUser:(NSString*)userName rewardPoint:(float)rewardPoints inUnit:(NSString*)unit fromCampaign:(NSString*)campName completionBlock:(App42ResponseBlock)completionBlock;
+
+-(void)redeemRewardForUser:(NSString*)userName rewardPoint:(float)rewardPoints inUnit:(NSString*)unit fromCampaign:(NSString*)campName completionBlock:(App42ResponseBlock)completionBlock;
+
+-(void)getRewardOfUser:(NSString*)userName fromCampaign:(NSString*)campName completionBlock:(App42ResponseBlock)completionBlock;
 @end
