@@ -47,4 +47,6 @@
  */
 @property(nonatomic,retain)NSMutableArray *attributeArray;
 
+-(void)clearMemory;
+
 @end

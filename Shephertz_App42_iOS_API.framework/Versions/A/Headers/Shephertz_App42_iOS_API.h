@@ -120,7 +120,6 @@
 #import <Shephertz_App42_iOS_API/App42NotFoundException.h>
 #import <Shephertz_App42_iOS_API/App42SecurityException.h>
 
-#import <Shephertz_App42_iOS_API/JSON.h>
 #import <Shephertz_App42_iOS_API/NSString+SBJSON.h>
 #import <Shephertz_App42_iOS_API/NSObject+SBJSON.h>
 #import <Shephertz_App42_iOS_API/SBJSON.h>
@@ -130,12 +129,14 @@
 #import <Shephertz_App42_iOS_API/Request.h>
 #import <Shephertz_App42_iOS_API/GiftService.h>
 
-#import <Shephertz_App42_iOS_API/Timer.h>
+#import <Shephertz_App42_iOS_API/App42Timer.h>
 #import <Shephertz_App42_iOS_API/TimerService.h>
 
 #import <Shephertz_App42_iOS_API/EventService.h>
 
 #import <Shephertz_App42_iOS_API/App42CacheManager.h>
 #import <Shephertz_App42_iOS_API/RewardsPoint.h>
+#import <Shephertz_App42_iOS_API/UserCampaigns.h>
+#import <Shephertz_App42_iOS_API/Campaign.h>
 
 

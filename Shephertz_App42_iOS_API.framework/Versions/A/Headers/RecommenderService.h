@@ -61,6 +61,9 @@ extern NSString *const PEARSON_CORRELATION;
 
 }
 
++(instancetype)sharedInstanceWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
++(void)terminate;
+
 -(id)init __attribute__((unavailable));
 -(id)initWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
 

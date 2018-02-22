@@ -31,5 +31,7 @@
  *set and get the List of the Categories of the Catalogue.
  */
 @property(nonatomic,retain)NSMutableArray *categoryListArray;
+
+-(void)clearMemory;
 @end
 

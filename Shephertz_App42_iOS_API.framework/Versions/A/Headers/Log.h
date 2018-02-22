@@ -25,5 +25,5 @@
  *set and get the list of all the messages in the log.
  */
 @property(nonatomic,retain) NSMutableArray *logMessageArray;
-
+-(void)clearMemory;
 @end

@@ -11,6 +11,10 @@
 @class ABTest;
 @interface ABTestService : App42Service
 
+
++(instancetype)sharedInstanceWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
++(void)terminate;
+
 - (id) init __attribute__((unavailable));
 /**
  * This is a constructor that takes

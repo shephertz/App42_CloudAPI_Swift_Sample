@@ -65,4 +65,6 @@
  */
 @property(nonatomic,retain)NSDate *createdOn;
 
+-(void)clearMemory;
+
 @end

@@ -32,4 +32,6 @@
  */
 @property(nonatomic,retain)NSMutableArray *recommendedItemList;
 
+-(void)clearMemory;
+
 @end

@@ -14,5 +14,5 @@
 @property(nonatomic,retain) NSString *name;
 @property(nonatomic,retain) NSString *type;
 @property(nonatomic,retain) NSMutableArray *variantList;
-
+-(void)clearMemory;
 @end

@@ -39,4 +39,5 @@
  */
 @property(nonatomic,retain) NSMutableArray *requests;
 
+-(void)clearMemory;
 @end

@@ -34,14 +34,16 @@
  */
 @property(nonatomic,assign) int recordCount;
 
-
 /*!
  *set and get the collection name of storage.
  */
 @property(nonatomic,retain) NSString *collectionName;
+
 /*!
  *set and get the jsonDocArray for Storage Object which contains JSONDocument Objects.
  */
 @property(nonatomic,retain) NSMutableArray *jsonDocArray;
+
+-(void)clearMemory;
 
 @end

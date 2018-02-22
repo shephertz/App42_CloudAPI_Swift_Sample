@@ -53,5 +53,11 @@
  */
 @property(nonatomic,assign)double rank;
 
+/*!
+ *set and get the name of the reward.
+ */
+@property(nonatomic,retain)NSString *icon;
+
+-(void)clearMemory;
 
 @end

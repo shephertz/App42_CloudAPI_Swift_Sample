@@ -42,6 +42,8 @@
  */
 @property(nonatomic,retain)NSMutableArray *photoList;
 
+-(void)clearMemory;
+
 @end
 
 

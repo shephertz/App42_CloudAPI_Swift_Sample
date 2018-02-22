@@ -75,4 +75,6 @@
  *
  */
 @property(nonatomic,retain)Payment *paymentObj;
+
+-(void)clearMemory;
 @end

@@ -51,4 +51,7 @@
 
 -(id)initWithUpload:(Upload*)uploadObj;
 
+-(void)clearMemory;
+
+
 @end

@@ -35,4 +35,6 @@
  */
 @property(nonatomic,retain)NSMutableArray *scoreList;
 
+-(void)clearMemory;
+
 @end

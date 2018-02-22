@@ -102,6 +102,9 @@
  *set and get publicProfile.
  */
 @property(nonatomic,retain) NSMutableArray *publicProfile;
+
+-(void)clearMemory;
+
 @end
 
 

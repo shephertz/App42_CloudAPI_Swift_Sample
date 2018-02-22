@@ -16,6 +16,9 @@ extern NSString *const GIF;
 @class Avatar;
 @interface AvatarService : App42Service
 
++(instancetype)sharedInstanceWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
++(void)terminate;
+
 - (id) init __attribute__((unavailable));
 /**
  * This is a constructor that takes
@@ -133,4 +136,5 @@ extern NSString *const GIF;
  * @throws App42Exception
  */
 -(void)createAvatarFromFileDataWithName:(NSString*)avatarName userName:(NSString*)userName fileData:(NSData*)fileData description:(NSString*)description extension:(NSString*)extension completionBlock:(App42ResponseBlock)completionBlock;
+
 @end

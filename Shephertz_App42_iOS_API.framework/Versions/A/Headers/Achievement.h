@@ -16,5 +16,5 @@
 @property(nonatomic,retain)    NSString *name;
 @property(nonatomic,retain)    NSString *gameName;
 @property(nonatomic,retain)    NSDate   *achievedOn;
-
+-(void)clearMemory;
 @end

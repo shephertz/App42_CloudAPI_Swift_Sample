@@ -20,4 +20,5 @@
 @property(nonatomic,retain) NSDate   *createdOn;
 @property(nonatomic,assign) BOOL     isCurrent;
 
+-(void)clearMemory;
 @end

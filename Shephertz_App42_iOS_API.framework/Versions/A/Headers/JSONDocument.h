@@ -61,7 +61,7 @@
 /*!
  *set and get the storageObject for JSONDocument Object.
  */
-@property(nonatomic,retain)Storage *storageObject;
+//@property(nonatomic,retain)Storage *storageObject;
 
 /*!
  *set and get the GeoTag for JSONDocument Object.
@@ -77,5 +77,7 @@
 //- (id) init __attribute__((unavailable));
 
 -(id)initWithStorage:(Storage*)storageObj;
+
+-(id)initialiseDoc;
 
 @end

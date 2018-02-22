@@ -42,5 +42,5 @@
 @property(nonatomic,retain)NSMutableArray *messageArray;
 
 -(id)init;
-
+-(void)clearMemory;
 @end

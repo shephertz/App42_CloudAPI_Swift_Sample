@@ -8,8 +8,13 @@
 
 #import <Shephertz_App42_iOS_API/Shephertz_App42_iOS_API.h>
 
-@class Timer;
+@class App42Timer;
 @interface TimerService : App42Service
+
+
++(instancetype)sharedInstanceWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
++(void)terminate;
+
 
 - (id) init __attribute__((unavailable));
 /**

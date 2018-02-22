@@ -64,5 +64,6 @@
  */
 @property(nonatomic,assign) int y;
 
+-(void)clearMemory;
 
 @end

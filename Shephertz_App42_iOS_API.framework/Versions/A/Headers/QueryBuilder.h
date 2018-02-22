@@ -60,4 +60,6 @@
 
 -(Query*)setLoggedInUser:(NSString*)logged;
 
++(void)cleanUpQuery:(Query*)query;
+
 @end

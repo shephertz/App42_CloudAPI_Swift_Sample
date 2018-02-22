@@ -23,5 +23,5 @@
  *set and get tthe list of all the files.
  */
 @property(nonatomic,retain)NSMutableArray *fileListArray;
-
+-(void)clearMemory;
 @end

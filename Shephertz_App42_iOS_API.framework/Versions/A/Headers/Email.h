@@ -46,5 +46,5 @@
  */
 @property(nonatomic,retain)NSMutableArray *configurationArray;
 -(id)init;
-
+-(void)clearMemory;
 @end

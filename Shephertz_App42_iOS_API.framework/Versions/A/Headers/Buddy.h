@@ -24,6 +24,7 @@
 @property(nonatomic,retain) NSMutableArray  *buddyList;
 @property(nonatomic,retain) NSMutableArray  *pointList;
 
+-(void)clearMemory;
 @end
 
 

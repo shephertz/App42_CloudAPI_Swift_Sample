@@ -62,4 +62,6 @@
 
 -(id)initWithGame:(Game*)gameObj;
 
+-(void)clearMemory;
+
 @end

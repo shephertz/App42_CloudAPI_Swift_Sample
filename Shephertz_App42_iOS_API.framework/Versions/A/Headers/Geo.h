@@ -53,5 +53,6 @@
  */
 @property(nonatomic,retain)NSMutableArray *pointList;
 
+-(void)clearMemory;
 
 @end

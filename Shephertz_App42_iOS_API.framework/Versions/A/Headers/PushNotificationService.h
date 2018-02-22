@@ -35,6 +35,8 @@ extern NSString *const DEVELOPMENT;
     
 }
 
++(instancetype)sharedInstanceWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
++(void)terminate;
 
 -(id) init __attribute__((unavailable));
 -(id)initWithAPIKey:(NSString *)apiKey  secretKey:(NSString *)secretKey;
@@ -291,5 +293,21 @@ extern NSString *const DEVELOPMENT;
  * @throws App42Exception
  */
 -(void)deleteChannel:(NSString*)channelName completionBlock:(App42ResponseBlock)completionBlock;
+
+/**
+ * Tracks push notificatiion delivery on client side.
+ *
+ * @return void
+ */
+-(void)trackPush:(App42ResponseBlock)completionBlock;
+
+
+/**
+ *
+ * @param userName
+ * get user push history
+ *
+ */
+-(void)getUserPushHistory:(NSString *)userName completionBlock:(App42ResponseBlock)completionBlock;
 
 @end
